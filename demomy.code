@@ -11,23 +11,22 @@ public class Demo {
     }
 
     public double findRemainder(int num, int divisor) {
-        double factorial = 1;
+    double remainder = 0;
 
-        for(int i = 1; i <= num; ++i){
-            factorial *= i;
-        }
-
-        return factorial;
+    if(num != 0) {
+        remainder = num % divisor;
     }
 
+    return remainder;
+}
 
-    public double factorial(int num){
-        double remainder = 0;
+public double factorial(int num) {
+    double factorial = 1;
 
-        if(num != 0) {
-            double remainder = num % divisor;
-        }
-
-        return remainder;
+    for(int i = 1; i <= num; ++i) {
+        factorial *= i;
     }
+
+    return factorial;
+}
 }
